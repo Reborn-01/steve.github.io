@@ -1,0 +1,160 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial;
+}
+body
+{
+    background: rgb(5, 42, 59);
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 50px;
+    background: rgb(5, 42, 59);
+}
+header
+{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: rgb(8, 50, 70);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    transition: .3s;
+}
+.logo
+{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: arial;
+    line-height: 0.8;
+}
+.menu img
+{
+    width: 50px;
+    border-radius: 50%;
+    display: inline;
+}
+.navbar
+{
+    display: flex;
+}
+.navbar a
+{
+    padding-left: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    transition: all .40s ease;
+}
+.navbar a:hover
+{
+    color: rgba(61, 159, 177, 0.89);
+}
+.menu 
+{
+    display: none;
+}
+.menu img:hover
+{
+    opacity: 0.7;
+}
+.contact
+{
+    padding-top: 10%;
+    text-align: center;
+}
+.contact h1
+{
+    padding-bottom: 6%;
+    color: rgba(61, 159, 177, 0.89);
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.contact ul li 
+{
+    font-size: 50px;
+}
+.contact ul li a .num
+{
+    padding-left: 10px;
+}
+.contact ul li a
+{
+    color: white;
+    font-size: 50px;
+}
+.contact ul li a:hover
+{
+    color: rgba(61, 159, 177, 0.89);
+    transition: all, ease-in-out .3s;
+}
+@media(max-width: 992px)
+{
+    .menu{
+        display: initial;
+    }
+    .menu img:hover
+    {
+        background: rgba(61, 159, 177, 0.89);
+    }
+    header{
+        height: 80px;
+    }
+    header .navbar{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgb(12, 58, 80);
+        transition: .3s; 
+    }
+    header .navbar li a{
+        font-size: 20px;
+    }
+    header .navbar.active{
+        top: 70px;
+    }
+    header a{
+        padding: 1.5rem;
+        display: block; 
+    }
+    .menu img{
+        width: 30px;
+    }
+    .contact
+    {
+        padding-top: 30%;
+    }
+    .contact ul li a
+    {
+        line-height: 2;
+    }
+}
+@media(max-width: 460px)
+{
+    .contact
+    {
+        padding-top: 50%;
+    }
+    .contact ul li a
+    {
+        font-size: 30px;
+    }
+}

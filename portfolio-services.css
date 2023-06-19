@@ -1,0 +1,75 @@
+h1{
+    padding-top: 75px;
+    text-align: center;
+    color: rgba(61, 159, 177, 0.89);
+    letter-spacing: 1.5px;
+}
+.service
+{
+    width: 100%;
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+.service .card
+{
+    height: 500px;
+    width: 300px;
+    background: rgb(15, 65, 88);
+    padding: 10PX;
+    border-radius: 20px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.service .card img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.service .card h2
+{
+    padding-top: 10px;
+    color: rgb(19, 180, 192);
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.service .card p
+{
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+}
+.service .card button
+{
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(19, 180, 192);
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: white;
+}
+.service .card button:hover
+{
+    transform: scale(1.05);
+    color: rgb(15, 65, 88);
+}
+@media (max-width: 992px)
+{
+    h1{
+        padding-top: 80px;
+    }
+    .service{
+        padding-bottom: 20px;
+    }
+}

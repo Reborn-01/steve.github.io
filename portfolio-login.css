@@ -1,0 +1,196 @@
+.contents
+{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 150px;
+}
+.contents .form
+{
+    width: 600px;
+    height: 400px;
+    background: rgb(0,0,0,0.5);
+    margin-left: 24.5%;
+    border-radius: 20px;
+}
+.contents .form h2
+{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgba(61, 159, 177, 0.89);
+}
+.contents .form input
+{
+    margin-bottom: 20px;
+    height: 40px;
+    width: 400px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid rgb(23, 81, 107);
+    background: rgb(5, 42, 59);
+}
+.contents .form input:invalid
+{
+    color: red;
+}
+.contents .form input::placeholder
+{
+    color: white;
+    font-size: 20px;
+}
+.contents .form .btn
+{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 150px;
+    height: 43px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    background: linear-gradient(45deg,#0326f9,#01fcf9);
+}
+.contents .form .btn:hover
+{
+    transform: scale(1.05);
+}
+.contents .form p
+{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+.contents .form p a
+{
+    color: #01fcf9;
+}
+.contents .form p a:hover
+{
+    color: rgb(23, 81, 107);
+}
+@media (max-width: 992px)
+{
+    .contents .form
+    {
+        width: 700px;
+        height: 500px;
+        background: rgb(0,0,0,0.5);
+        margin-left: 100px;
+        margin-top: 250px;
+        border-radius: 20px;
+    }
+    .contents .form input
+    {
+        margin-bottom: 20px;
+        height: 50px;
+        width: 500px;
+        padding-left: 20px;
+        font-size: 25px;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        border: 3px solid rgb(23, 81, 107);
+        background: rgb(5, 42, 59);
+    }
+    .contents .form .btn
+    {
+        margin-bottom: 15px;
+        padding: 5px;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        font-size: 30px;
+        font-weight: 700;
+        background: linear-gradient(45deg,#0326f9,#01fcf9);
+    }
+    .contents .form p
+    {
+        padding-bottom: 10px;
+        font-size: 30px;
+        color: white;
+    }
+}
+@media(max-width: 850px)
+{
+    .contents .form{
+        margin-left: 10px;
+        margin-top: 250px;
+    }
+}
+@media(max-width: 768px)
+{
+    .contents .form{
+        margin-left: -15px;
+        margin-top: 250px;
+    }
+}
+@media(max-width: 550px)
+{
+    .contents .form{
+        margin-left: -42px;
+        margin-top: 110px;
+        width: 520px;
+    }
+}
+@media(max-width: 460px)
+{
+    .contents .form
+    {
+        width: 300px;
+        height: 500px;
+        background: rgb(0,0,0,0.5);
+        margin-left: -20px;
+        margin-top: 10%;
+        border-radius: 20px;
+    }
+    .contents .form input
+    {
+        margin-bottom: 20px;
+        height: 40px;
+        width: 200px;
+        padding-left: 20px;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px;
+        outline: none;
+        border: 3px solid rgb(23, 81, 107);
+        background: rgb(5, 42, 59);
+    }
+    .contents .form input::placeholder
+    {
+        color: white;
+        font-size: 15px;
+    }
+    .contents .form p
+    {
+        padding-bottom: 10px;
+        font-size: 18px;
+        color: white;
+    }
+}
+@media(max-width: 420px)
+{
+    .contents .form
+    {
+        width: 300px;
+        height: 500px;
+        background: rgb(0,0,0,0.5);
+        margin-left: -10px;
+        margin-top: 10%;
+        border-radius: 20px;
+    }
+}
+@media(max-width: 300px)
+{
+    .contents .form{
+        width: 250px;
+        margin-left: -35px;
+    }
+}

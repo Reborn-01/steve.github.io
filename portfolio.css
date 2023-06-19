@@ -1,0 +1,238 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: arial;
+}
+body
+{
+    background: rgb(5, 42, 59);
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 50px;
+    background: rgb(5, 42, 59);
+}
+header
+{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background-color: rgb(8, 50, 70);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    transition: .3s;
+}
+.logo
+{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: arial;
+    line-height: 0.8;
+}
+.menu img
+{
+    width: 50px;
+    border-radius: 50%;
+    display: inline;
+}
+.navbar
+{
+    display: flex;
+}
+.navbar a
+{
+    padding-left: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    transition: all .40s ease;
+}
+.navbar a:hover
+{
+    color: rgba(61, 159, 177, 0.89);
+}
+.menu 
+{
+    display: none;
+}
+.menu img:hover
+{
+    opacity: 0.7;
+}
+.content
+{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .main-content
+{
+    width: 800px;
+}
+.content .main-content .name
+{
+    padding-bottom: 40px;
+    color: rgba(61, 159, 177, 0.89);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.content .main-content .name span
+{
+    color: white;
+    font-size: 50px;
+}
+.content .main-content .note
+{
+    padding-bottom: 40px;
+    font-size: 30px;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+.content .main-content button 
+{
+    width: 120px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(61, 159, 177, 0.89);
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(61, 159, 177, 0.89);
+}
+.content .main-content button:hover
+{
+    background: rgba(61, 159, 177, 0.89);
+    color: black;
+}
+.content .main-content .hire
+{
+    margin-right: 20px;
+}
+.contact
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.contact img
+{
+    display: flex;
+    width: 80px;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+.contact img:hover
+{
+    background: rgba(61, 159, 177, 0.89);
+}
+@media(max-width: 992px)
+{
+    .menu{
+        display: initial;
+    }
+    .menu img:hover
+    {
+        background: rgba(61, 159, 177, 0.89);
+    }
+    header{
+        height: 80px;
+    }
+    header .navbar{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgb(12, 58, 80);
+        transition: .3s; 
+    }
+    header .navbar li a{
+        font-size: 20px;
+    }
+    header .navbar.active{
+        top: 70px;
+    }
+    header a{
+        padding: 1.5rem;
+        display: block; 
+    }
+    .menu img{
+        width: 30px;
+    }
+    .content .main-content{
+        width: 700px;
+    }
+    .content .main-content .name{
+        padding-bottom: 40px;
+        color: rgba(61, 159, 177, 0.89);
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 50px;
+    }
+    .content .main-content .name span{
+        font-size: 70px;
+        line-height: 1;
+        
+    }
+    .content .main-content .note{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+}
+@media (min-height: 1030px)
+{
+    .content .main-content .note{
+        line-height: 1.5;
+        font-size: 40px;
+    }
+}
+@media (min-height: 1400px)
+{
+    .content .main-content .note{
+        line-height: 1.5;
+        font-size: 50px;
+    }
+}
+@media(max-width: 768px)
+{
+    .contact img{
+        width: 50px;
+    }
+    
+}
+@media(max-width: 460px)
+{
+    .container{
+        padding: 0 50px;
+    }
+
+    .contact img{
+        display: inline-block;
+    }
+    .content{
+        padding-top: 100px;
+    }
+    .content .main-content .hire{
+        margin-bottom: 10px;
+    }
+
+}
